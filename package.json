@@ -1,0 +1,30 @@
+{
+  "name": "fastT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tap test/**/*.test.js",
+    "start": "fastify start -l info app.js",
+    "dev": "fastify start -l info -p 3001 -a 127.0.0.1 -w  app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^2.0.0",
+    "fastify-autoload": "^1.0.0",
+    "fastify-cli": "^1.2.0",
+    "fastify-formbody": "^3.1.0",
+    "fastify-multipart": "^1.0.2",
+    "fastify-mysql": "^0.3.0",
+    "fastify-plugin": "^1.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.2.2",
+    "tap": "^12.5.3"
+  }
+}
