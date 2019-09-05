@@ -59,8 +59,8 @@ module.exports = async function (fastify) {
     result.then(res => reply.send(res), error => reply.send(error))
   });
 
-  fastify.post('/getAnimation', async function(request, reply) {
-    const result = getAnimation(fastify, request.body)
+  fastify.get('/getAnimation', async function(request, reply) {
+    const result = getAnimation(fastify, request.query)
     result.then(res => reply.send(res[0]), error => reply.send(error))
   });
 
